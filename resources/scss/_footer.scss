@@ -1,0 +1,131 @@
+.footer {
+	background: #000;
+	padding: rem(0) rem(0) rem(120);
+	// .footer__container
+	&__container {
+	}
+	// .footer__body
+	&__body {
+		padding: rem(60) 0px 0px 0px;
+		border-top: rem(1) solid #585C6A;
+		position: relative;
+	}
+	// .footer__info
+	&__info {
+	}
+}
+
+//===============================================================
+.footer-menu {
+	border-top: rem(1) solid #585C6A;
+	padding: rem(34) rem(0) rem(0);
+	@media (min-width: em($md2+1)) {
+		display: flex;
+		justify-content: space-between;
+		gap: rem(50);
+	}
+	// .footer-menu__item
+	&__item {
+	}
+	// .footer-menu__control
+	&__control {
+		color: #fff;
+		font-size: rem(18);
+		font-weight: 800;
+		white-space: nowrap;
+		margin: 0px 0px rem(20) 0px;
+		transition: all 0.3s ease 0s;
+		&::before {
+			transition: all 0.3s ease 0s;
+		}
+		@media (min-width: em($md2+1)) {
+			margin: 0px 0px rem(32) 0px;
+			&[type=button] {
+				cursor: default;
+			}
+			&::before {
+				display: none;
+			}
+		}
+		&._active {
+			color: var(--color-second);
+		}
+		@media (max-width: em($md2)) {
+			&[type=button] {
+				display: flex;
+				align-items: center;
+				flex-direction: row-reverse;
+				gap: rem(5);
+				&._active {
+					&::before {
+						transform: scale(1, -1);
+					}
+				}
+			}
+		}
+	}
+	// .footer-menu__container
+	&__container {
+	}
+	// .footer-menu__title
+	&__title {
+		font-family: 'Nunito Sans';
+		font-size: rem(14);
+		font-weight: 800;
+		margin: 0px 0px rem(20) 0px;
+	}
+	// .footer-menu__list
+	&__list {
+		margin: 0px 0px rem(25) 0px;
+	}
+	// .footer-menu__list-item
+	&__list-item {
+		margin: 0px 0px rem(20) 0px;
+	}
+	// .footer-menu__link
+	&__link {
+		font-size: rem(14);
+		font-weight: 300;
+	}
+}
+
+//---------------------------------------------------------------
+.footer-info {
+	// .footer-info__socials
+	&__socials {
+		display: flex;
+		justify-content: flex-end;
+		margin: 0px 0px rem(26) 0px;
+	}
+	// .footer-info__content
+	&__content {
+		font-size: rem(14);
+		text-align: right;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		gap: rem(3);
+	}
+	// .footer-info__logo
+	&__logo {
+		font-weight: 700;
+		margin: 0px 0px rem(5) 0px;
+	}
+	// .footer-info__address
+	&__address {
+	}
+	// .footer-info__phone
+	&__phone {
+	}
+	// .footer-info__email
+	&__email {
+	}
+}
+
+//---------------------------------------------------------------
+.social {
+	font-size: rem(40);
+	background: linear-gradient(45deg, var(--color-gradient-1) 0%, var(--color-gradient-2) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
