@@ -1296,8 +1296,10 @@ function doSubmitForm(form) {
 	const beforeSubmit = form.dataset.before;
 	const afterSubmit = form.dataset.after;
 
+	console.log('get1');
 	// Выполнение функции до отправки формы
 	if (beforeSubmit && !window[beforeSubmit]()) return;
+	console.log('get2');
 
 	// Отправка формы
 	switch (sendForm) {
@@ -1306,9 +1308,8 @@ function doSubmitForm(form) {
 			break;
 
 		case 'test':
-			modal.openModal('form-sended');
 			if (afterSubmit) window[afterSubmit]();
-			// alert('Форма отправлена');
+			alert('Форма отправлена');
 			break;
 
 		default:
@@ -1341,7 +1342,6 @@ function submitByAjax(form, afterSubmit = false) {
 	.then(data => {
 		// Выполнение функции после отправки формы
 		if (afterSubmit) window[afterSubmit].call(null, data);
-		modal.openModal('form-sended');
 	})
 	.catch(error => console.log(error.message));
 }

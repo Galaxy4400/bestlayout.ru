@@ -10,9 +10,22 @@ const mainMenu = new Menu('main-menu');
 // Инициализация меню в футере
 const footerMenu = new Spoiler('footer-menu', {mediaMax: 991});
 
-
-
+// Инициализация спойлера
 const stickySpoiler = new Spoiler('sticky', {open: true});
 
-
+// Инициализация блока со стиками
 const sticky = new Sticky('sticky');
+
+
+
+
+
+//===============================================================
+
+function beforeFormSending() {
+	return true;
+}
+
+function afterFormSending() {
+	modal.openModal('form-sended');
+}

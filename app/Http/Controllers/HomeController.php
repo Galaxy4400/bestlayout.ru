@@ -20,6 +20,6 @@ class HomeController extends Controller
 
 		Mail::to("moiseevEO@yandex.ru")->send(new RequestForm($request->validated(), $filePath));
 
-		return redirect()->route('home');
+		return response()->json(['success' => true]);
 	}
 }

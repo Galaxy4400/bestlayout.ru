@@ -4,7 +4,17 @@
 			<h2 class="request__title">Оставить заявку</h2>
 			<p class="request__label">Заполните заявку с интересующим Вас вопросом</p>
 		</div>
-		<form class="request__form form form_request" action="{{ route('request_form_process') }}" method="post" data-form data-autocomplete-off enctype="multipart/form-data">
+		<form 
+			class="request__form form form_request" 
+			action="{{ route('request_form_process') }}" 
+			method="post"
+			data-form
+			data-send="ajax"
+			data-autocomplete-off
+			enctype="multipart/form-data"
+			data-before="beforeFormSending"
+			data-after="afterFormSending"
+		>
 			@csrf
 			<div class="form__section">
 				<div class="form__row form__row_2">
@@ -64,11 +74,11 @@
 								</div>
 							</div>
 							<div class="form__column" data-switch="file">
-								<input type="file" name="file" data-file required>
+								<input type="file" name="file" data-file data-min="1">
 								<!-- <p class="form__file-label">Максимальный размер 5 МБ, поддерживаемые форматы: rtf, pdf, doc, docx, ppt, pptx, xls, xlsx</p> -->
 							</div>
 							<div class="form__column" data-switch="link">
-								<input class="form__input input" type="text" name="link" placeholder="Ссылка на макет *">
+								<input class="form__input input" type="text" name="link" required placeholder="Ссылка на макет *">
 							</div>
 							<div class="form__column">
 								<button class="form__btn btn btn_fw btn_gradient" type="submit">Отправить</button>
