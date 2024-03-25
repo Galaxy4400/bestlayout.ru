@@ -1,5 +1,5 @@
 # Installation
 
  - composer install
- - php artisan storage:link
- - php artisan migrate
+ - npm install
+ - php artisan app:install

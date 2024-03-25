@@ -130,7 +130,7 @@ document.querySelectorAll('input[data-file]').forEach(input => {
 	// Объект локализации для текста кнопки
 	const fileButtonLocalization = {
 		English: 'Choose File',
-		Russian: 'Прикрепите файл',
+		Russian: 'Прикрепите файл с макетом',
 	};
 
 	const inputContainer = document.createElement('label');
