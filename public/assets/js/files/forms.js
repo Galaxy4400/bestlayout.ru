@@ -1303,7 +1303,7 @@ function doSubmitForm(form) {
 	const afterSubmit = form.dataset.after;
 
 	// Выполнение функции до отправки формы
-	if (beforeSubmit && !window[beforeSubmit]()) return;
+	if (beforeSubmit && !window[beforeSubmit].call(null, form)) return;
 
 	// Отправка формы
 	switch (sendForm) {

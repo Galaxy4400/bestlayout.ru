@@ -22,7 +22,9 @@ const sticky = new Sticky('sticky');
 
 //===============================================================
 
-function beforeFormSending() {
+function beforeFormSending(form) {
+	form.classList.add('_loading');
+	form.querySelectorAll('.form__validate-error').forEach(error => { error.innerHTML = "" });
 	return true;
 }
 
@@ -35,4 +37,5 @@ function afterFormSending(form, response) {
 			field.closest('.form__column').querySelector('.form__validate-error').innerHTML = response.errors[fieldName].toString();
 		}
 	}
+	form.classList.remove('_loading');
 }

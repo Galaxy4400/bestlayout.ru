@@ -26,8 +26,8 @@ class RequestFormRequest extends FormRequest
 			'theme' => ['required', 'string'],
 			'budget' => ['nullable', 'integer'],
 			'message' => ['nullable', 'string'],
-			'file' => ['nullable', 'file'],
-			'link' => ['nullable', 'string'],
+			'file' => ['required_if:type,file', 'file'],
+			'link' => ['required_if:type,link', 'string'],
 			'agreement' => ['required'],
 		];
 	}
