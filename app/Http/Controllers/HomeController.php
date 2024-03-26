@@ -16,9 +16,9 @@ class HomeController extends Controller
 
 	public function requestForm(RequestFormRequest $request)
 	{
-		$filePath = $request->file->store('files/layouts');
+		// $filePath = $request->file->store('files/layouts');
 
-		Mail::to("moiseevEO@yandex.ru")->send(new RequestForm($request->validated(), $filePath));
+		// Mail::to("moiseevEO@yandex.ru")->send(new RequestForm($request->validated(), $filePath));
 
 		return response()->json(['success' => true]);
 	}

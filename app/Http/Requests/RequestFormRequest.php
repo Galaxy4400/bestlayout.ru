@@ -3,6 +3,8 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Contracts\Validation\Validator;
+use Illuminate\Http\Exceptions\HttpResponseException;
 
 class RequestFormRequest extends FormRequest
 {
@@ -27,5 +29,18 @@ class RequestFormRequest extends FormRequest
 			'file' => ['nullable', 'file'],
 			'link' => ['nullable', 'string'],
 		];
+	}
+
+	
+	protected function failedValidation(Validator $validator)
+	{
+		$errors = $validator->errors();
+
+		$response = response()->json([
+			'message' => 'Invalid data send',
+			'details' => $errors->messages(),
+		], 422);
+
+		throw new HttpResponseException($response);
 	}
 }

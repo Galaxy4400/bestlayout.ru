@@ -23,9 +23,11 @@ const sticky = new Sticky('sticky');
 //===============================================================
 
 function beforeFormSending() {
+	console.log('beforeFormSending');
 	return true;
 }
 
 function afterFormSending() {
+	console.log('afterFormSending');
 	modal.openModal('form-sended');
 }
