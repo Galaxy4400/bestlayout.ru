@@ -122,23 +122,12 @@
 /**
  * Устанавливает блоку бекграунд с анимацией загрузки
  */
-._loading {
-	position: relative;
-	pointer-events: none;
-	&::before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		left: 0;
-		z-index: 10;
-		background: rgba(0, 0, 0, 0.5);
-		background-image: url("../img/loading.gif");
-		background-position: center;
-		background-repeat: no-repeat;
-	}
-}
+// ._loading {
+// 	background: #000000;
+// 	background-image: url("../img/loading.gif");
+// 	background-position: center;
+// 	background-repeat: no-repeat;
+// }
 
 /**
  * Скрывает блок, но оставляет видимым для семантики

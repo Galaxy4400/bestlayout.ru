@@ -31,6 +31,7 @@ function beforeFormSending(form) {
 function afterFormSending(form, response) {
 	if (response.success) {
 		modal.openModal('form-sended');
+		form.reset();
 	} else {
 		for (const fieldName in response.errors) {
 			let field = form.querySelector(`[name=${fieldName}]`);

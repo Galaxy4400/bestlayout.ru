@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Actions\RequestFormFileUpload;
 use App\Http\Requests\RequestFormRequest;
 use App\Mail\RequestForm;
 use Illuminate\Support\Facades\Mail;
@@ -14,11 +15,9 @@ class HomeController extends Controller
 	}
 
 
-	public function requestForm(RequestFormRequest $request)
+	public function requestForm(RequestFormRequest $request, RequestFormFileUpload $uploadFileAction)
 	{
-		// $filePath = $request->file->store('files/layouts');
-
-		// Mail::to("moiseevEO@yandex.ru")->send(new RequestForm($request->validated(), $filePath));
+		Mail::to("moiseevEO@yandex.ru")->send(new RequestForm($request->validated(), $uploadFileAction()));
 
 		return response()->json(['success' => true]);
 	}

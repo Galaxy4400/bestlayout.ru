@@ -74,7 +74,7 @@
 								</div>
 							</div>
 							<div class="form__column" data-switch="file">
-								<input type="file" name="file" data-file multiple>
+								<input type="file" name="file" data-file>
 								<!-- <p class="form__file-label">Максимальный размер 5 МБ, поддерживаемые форматы: rtf, pdf, doc, docx, ppt, pptx, xls, xlsx</p> -->
 							</div>
 							<div class="form__column" data-switch="link">

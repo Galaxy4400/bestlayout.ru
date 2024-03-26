@@ -19,7 +19,7 @@ class RequestForm extends Mailable
 	 */
 	public function __construct(
 		protected $formData,
-		protected $filePath,
+		protected $filePath = null,
 	)
 	{
 		//
@@ -53,6 +53,8 @@ class RequestForm extends Mailable
 	 */
 	public function attachments(): array
 	{
+		if (!$this->filePath) return [];
+
 		return [
 			Attachment::fromStorage($this->filePath),
 		];
