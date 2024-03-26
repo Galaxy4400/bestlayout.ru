@@ -28,17 +28,18 @@ class RequestFormRequest extends FormRequest
 			'message' => ['nullable', 'string'],
 			'file' => ['nullable', 'file'],
 			'link' => ['nullable', 'string'],
+			'agreement' => ['required'],
 		];
 	}
 
-	
+
 	protected function failedValidation(Validator $validator)
 	{
 		$errors = $validator->errors();
 
 		$response = response()->json([
-			'message' => 'Invalid data send',
-			'details' => $errors->messages(),
+			'success' => false,
+			'errors' => $errors->messages(),
 		], 422);
 
 		throw new HttpResponseException($response);

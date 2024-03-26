@@ -578,6 +578,13 @@ textarea.input {
 			margin: 0px 0px 0px rem(3);
 		}
 	}
+	// .form__validate-error
+	&__validate-error {
+		color: var(--color-error);
+		font-style: italic;
+		font-size: rem(14);
+	}
+	// .form__error-label
 	&__error-label {
 		font-size: rem(14);
 		font-style: italic;

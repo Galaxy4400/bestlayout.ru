@@ -22,7 +22,7 @@
 						<div class="form__row">
 							<div class="form__column">
 								<label class="form__label">
-									<input class="form__input input" type="text" name="name" required placeholder="Ваше имя *">
+									<input class="form__input input" type="text" name="name" placeholder="Ваше имя *">
 								</label>
 							</div>
 							<div class="form__column">
@@ -47,7 +47,7 @@
 							</div>
 							<div class="form__column">
 								<label class="form__label">
-									<input class="form__input input" type="email" name="email" required placeholder="email@domain.com *">
+									<input class="form__input input" type="email" name="email" placeholder="email@domain.com *">
 								</label>
 							</div>
 						</div>
@@ -55,7 +55,7 @@
 					<div class="form__column" data-aos="fade-left">
 						<div class="form__row"> 
 							<div class="form__column">
-								<select class="form__select" name="theme" required data-choice>
+								<select class="form__select" name="theme" data-choice>
 									<option value="" selected disabled>Что Вас интересует? *</option>
 									<option value="1">Хочу заказать вёрстку</option>
 									<option value="2" data-switcher="range">Узнать стоимость работы</option>
@@ -74,17 +74,17 @@
 								</div>
 							</div>
 							<div class="form__column" data-switch="file">
-								<input type="file" name="file" data-file data-min="1">
+								<input type="file" name="file" data-file multiple>
 								<!-- <p class="form__file-label">Максимальный размер 5 МБ, поддерживаемые форматы: rtf, pdf, doc, docx, ppt, pptx, xls, xlsx</p> -->
 							</div>
 							<div class="form__column" data-switch="link">
-								<input class="form__input input" type="text" name="link" required placeholder="Ссылка на макет *">
+								<input class="form__input input" type="text" name="link" placeholder="Ссылка на макет *">
 							</div>
 							<div class="form__column">
 								<button class="form__btn btn btn_fw btn_gradient" type="submit">Отправить</button>
 							</div>
 							<div class="form__column">
-								<input type="checkbox" name="Agreement" value="1" required data-check data-label="* Согласен с <a href='#'>условиями</a> использования моих персональных данных">
+								<input type="checkbox" name="agreement" value="1" data-check data-label="* Согласен с <a href='#'>условиями</a> использования моих персональных данных">
 							</div>
 						</div>
 					</div>

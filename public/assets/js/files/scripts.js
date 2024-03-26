@@ -23,11 +23,16 @@ const sticky = new Sticky('sticky');
 //===============================================================
 
 function beforeFormSending() {
-	console.log('beforeFormSending');
 	return true;
 }
 
-function afterFormSending() {
-	console.log('afterFormSending');
-	modal.openModal('form-sended');
+function afterFormSending(form, response) {
+	if (response.success) {
+		modal.openModal('form-sended');
+	} else {
+		for (const fieldName in response.errors) {
+			let field = form.querySelector(`[name=${fieldName}]`);
+			field.closest('.form__column').querySelector('.form__validate-error').innerHTML = response.errors[fieldName].toString();
+		}
+	}
 }
