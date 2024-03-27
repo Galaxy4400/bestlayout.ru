@@ -57,15 +57,15 @@
 							<div class="form__column">
 								<select class="form__select" name="theme" data-choice>
 									<option value="" selected disabled>Что Вас интересует? *</option>
-									<option value="1">Хочу заказать вёрстку</option>
-									<option value="2" data-switcher="range">Узнать стоимость работы</option>
+									<option value="order">Хочу заказать вёрстку</option>
+									<option value="price" data-switcher="range">Узнать стоимость работы</option>
 								</select>
 							</div>
 							<div class="form__column" data-switch="range">
 								<div data-slider="budget" data-range="1000,100000" data-start="10000" data-step="500" data-label="На какой бюджет Вы расчитываете" data-suffix="руб."></div>
 							</div>
 							<div class="form__column">
-								<textarea class="form__input input" name="message" placeholder="Комментарий..."></textarea>
+								<textarea class="form__input input" name="comment" placeholder="Комментарий..."></textarea>
 							</div>
 							<div class="form__column">
 								<div class="form__radio-group">

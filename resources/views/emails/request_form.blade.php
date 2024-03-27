@@ -1,10 +1,10 @@
-<p>Имя: {{ $name }}</p>
-<p>Фамилия: {{ $surname }}</p>
-<p>Отчество: {{ $secondname }}</p>
-<p>Компания: {{ $company }}</p>
-<p>Телефон: {{ $phone }}</p>
-<p>Email: {{ $email }}</p>
-<p>Тема: {{ $theme }}</p>
-{{-- <p>Бюджет: {{ $budget }}</p> --}}
-{{-- <p>Сообщение: {{ $message }}</p> --}}
-{{-- <p>Ссылка на макет: <a href="{{ $link }}">ссылка</a></p> --}}
+@isset($name) <p>Имя: {{ $name }}</p> @endisset
+@isset($surname) <p>Фамилия: {{ $surname }}</p> @endisset
+@isset($secondname) <p>Отчество: {{ $secondname }}</p> @endisset
+@isset($company) <p>Компания: {{ $company }}</p> @endisset
+@isset($phone) <p>Телефон: {{ $phone }}</p> @endisset
+@isset($email) <p>Email: {{ $email }}</p> @endisset
+@isset($theme) <p>Тема: {{ $theme }}</p> @endisset
+@isset($budget) <p>Бюджет: {{ $budget }}</p> @endisset
+@isset($comment) <p>Сообщение: {{ $comment }}</p> @endisset
+@isset($link) <p>Ссылка на макет: <a href="{{ $link }}">ссылка</a></p> @endisset

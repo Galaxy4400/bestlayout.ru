@@ -31,7 +31,7 @@ class RequestForm extends Mailable
 	public function envelope(): Envelope
 	{
 		return new Envelope(
-			subject: 'Request Form',
+			subject: 'Запрос на Best Layout',
 		);
 	}
 
