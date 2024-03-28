@@ -4,7 +4,7 @@ namespace App\Http\Actions;
 
 class RequestFormFileUpload
 {
-	public function __invoke()
+	public function handle()
 	{
 		$filePath = null;
 

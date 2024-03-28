@@ -488,9 +488,9 @@
 .sticky-persone {
 	position: relative;
 	max-width: 235px;
-	margin: 0px 0px 0px rem(150);
-	@media (max-width: em($md0)) {
-		margin: 0px 0px 0px rem(50);
+	margin: 0px 0px 0px rem(50);
+	@media (max-width: em($md1)) {
+		margin: 0px 0px 0px 0px;
 	}
 	// .sticky-persone__name
 	&__name {
@@ -512,30 +512,17 @@
 	// .sticky-persone__photo
 	&__photo {
 		position: absolute;
-		bottom: -200px;
-		right: -290px;
 		z-index: 3;
-		@media (max-width: em($md0)) {
-			bottom: -210px;
-			right: -230px
-		}
-		@media (max-width: em($md3)) {
-			bottom: -100px;
-		}
-		@media (max-width: em($md3)) {
-			bottom: -130px;
-		}
-		@media (min-height: 1100px) {
-			bottom: -130px;
-			transform: scale(1.5);
-		}
-		@media (min-height: 1200px) {
-			bottom: -25px;
-		}
-		@media (min-height: 1400px) {
-			bottom: 75px;
-			right: -360px;
-			transform: scale(2);
+		top: rem(-20);
+		right: rem(-200);
+		width: rem(200);
+		height: rem(200);
+		border-radius: 50%;
+		border: rem(2) solid var(--color-second);
+		overflow: hidden;
+		background: #fff;
+		@media (max-width: em($md1)) {
+			right: rem(-180);
 		}
 	}
 }

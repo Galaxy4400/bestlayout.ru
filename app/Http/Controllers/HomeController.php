@@ -17,7 +17,7 @@ class HomeController extends Controller
 
 	public function requestForm(RequestFormRequest $request, RequestFormFileUpload $uploadFileAction)
 	{
-		Mail::to("moiseevEO@yandex.ru")->send(new RequestForm($request->validated(), $uploadFileAction()));
+		Mail::to("bestlayout@yandex.ru")->send(new RequestForm($request->validated(), $uploadFileAction->handle()));
 
 		return response()->json(['success' => true]);
 	}

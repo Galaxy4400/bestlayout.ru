@@ -35,11 +35,11 @@
 									<input class="form__input input" type="text" name="secondname" placeholder="Ваше отчество">
 								</label>
 							</div>
-							<div class="form__column">
+							{{-- <div class="form__column">
 								<label class="form__label">
 									<input class="form__input input" type="text" name="company" placeholder="Ваша компания">
 								</label>
-							</div>
+							</div> --}}
 							<div class="form__column">
 								<label class="form__label">
 									<input class="form__input input" type="tel" name="phone" placeholder="+7 (495) 000-00-00" data-mask="+7 (999) 999-99-99" data-mask-placeholder="_" data-mask-between="2">
@@ -65,7 +65,7 @@
 								<div data-slider="budget" data-range="1000,100000" data-start="10000" data-step="500" data-label="На какой бюджет Вы расчитываете" data-suffix="руб."></div>
 							</div>
 							<div class="form__column">
-								<textarea class="form__input input" name="comment" placeholder="Комментарий..."></textarea>
+								<textarea class="form__input input" name="comment" placeholder="Ваше сообщение..."></textarea>
 							</div>
 							<div class="form__column">
 								<div class="form__radio-group">
@@ -75,7 +75,7 @@
 							</div>
 							<div class="form__column" data-switch="file">
 								<input type="file" name="file" data-file>
-								<!-- <p class="form__file-label">Максимальный размер 5 МБ, поддерживаемые форматы: rtf, pdf, doc, docx, ppt, pptx, xls, xlsx</p> -->
+								{{-- <p class="form__file-label">Максимальный размер 5 МБ, поддерживаемые форматы: rtf, pdf, doc, docx, ppt, pptx, xls, xlsx</p> --}}
 							</div>
 							<div class="form__column" data-switch="link">
 								<input class="form__input input" type="text" name="link" placeholder="Ссылка на макет *">
@@ -83,9 +83,9 @@
 							<div class="form__column">
 								<button class="form__btn btn btn_fw btn_gradient" type="submit">Отправить</button>
 							</div>
-							<div class="form__column">
+							{{-- <div class="form__column">
 								<input type="checkbox" name="agreement" value="1" data-check data-label="* Согласен с <a href='#'>условиями</a> использования моих персональных данных">
-							</div>
+							</div> --}}
 						</div>
 					</div>
 				</div>

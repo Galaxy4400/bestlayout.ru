@@ -163,7 +163,7 @@ textarea {
 textarea.input {
 	resize: none;
 	padding: em(13, 20) em(23, 20);
-	min-height: em(126, 20);
+	min-height: em(100, 20);
 }
 
 
@@ -175,7 +175,7 @@ textarea.input {
 	cursor: pointer;
 	position: relative;
 	display: flex;
-	height: rem(126);
+	height: rem(80);
 	padding: em(10) em(12);
 	border: rem(2) dotted #000;
 	background: linear-gradient(#000 0 0) padding-box,

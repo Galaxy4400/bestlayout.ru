@@ -20,7 +20,7 @@ class RequestFormRequest extends FormRequest
 			'name' => ['required', 'string'],
 			'surname' => ['nullable', 'string'],
 			'secondname' => ['nullable', 'string'],
-			'company' => ['nullable', 'string'],
+			// 'company' => ['nullable', 'string'],
 			'phone' => ['nullable', 'string'],
 			'email' => ['required', 'email'],
 			'theme' => ['required', 'string'],
@@ -28,7 +28,7 @@ class RequestFormRequest extends FormRequest
 			'comment' => ['nullable', 'string'],
 			'file' => ['required_if:type,file', 'file'],
 			'link' => ['required_if:type,link', 'string'],
-			'agreement' => ['required'],
+			// 'agreement' => ['required'],
 		];
 	}
 
