@@ -19,7 +19,7 @@ class WorkFactory extends Factory
 		return [
 			'name' => $this->faker->company(),
 			'description' => $this->faker->words(10, true),
-			'thumbnail' => $this->faker->file(base_path('tests/Fixtures/images/works'), storage_path('app/public/images/works'), false),
+			'type' => $this->faker->numberBetween(1, 2),
 		];
 	}
 }

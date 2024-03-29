@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Actions\RequestFormFileUpload;
 use App\Http\Requests\RequestFormRequest;
 use App\Mail\RequestForm;
+use App\Models\Work;
 use Illuminate\Support\Facades\Mail;
 
 class HomeController extends Controller

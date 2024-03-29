@@ -14,8 +14,11 @@ return new class extends Migration
 		Schema::create('works', function (Blueprint $table) {
 			$table->id();
 			$table->string('name');
+			$table->string('link')->nullable();
 			$table->string('description')->nullable();
 			$table->string('thumbnail')->nullable();
+			$table->integer('type')->unsigned()->default(1);
+			$table->json('links')->nullable();
 			$table->timestamps();
 		});
 	}

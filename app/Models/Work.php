@@ -11,7 +11,15 @@ class Work extends Model
 
 	protected $fillable = [
 		'name',
+		'link',
 		'description',
 		'thumbnail',
+		'type',
+		'links',
+	];
+
+
+	protected $casts = [
+		'links' => 'array',
 	];
 }

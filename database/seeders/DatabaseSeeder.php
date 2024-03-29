@@ -6,6 +6,7 @@ namespace Database\Seeders;
 
 use App\Models\Work;
 use Illuminate\Database\Seeder;
+use Database\Factories\AdminFactory;
 
 class DatabaseSeeder extends Seeder
 {
@@ -15,5 +16,11 @@ class DatabaseSeeder extends Seeder
 	public function run(): void
 	{
 		Work::factory(10)->create();
+
+		AdminFactory::new()->createOne([
+			'email' => 'moiseevEO@yandex.ru',
+			'password' => bcrypt('1234'),
+			'name' => 'Евгений',
+		]);
 	}
 }
