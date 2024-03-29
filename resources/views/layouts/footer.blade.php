@@ -3,7 +3,7 @@
 		<div class="footer__body" data-aos="fade-up">
 			<div class="footer__info footer-info">
 				<nav class="footer-info__socials">
-					<a class="social _icon-vk" href=""></a>
+					<a class="social _icon-tg" href="https://t.me/moiseevEO" target="_blank"></a>
 				</nav>
 				<div class="footer-info__content">
 					<div class="footer-info__logo">&#60;/<span> </span>B<span>est</span><span> </span>L<span>ayout </span>&#62;</div>

@@ -28,27 +28,21 @@
 
 
 // Классы иконок
-._icon-vk:before {
-	content: "\e900";
-}
 ._icon-env:before {
-	content: "\e903";
+  content: "\e901";
 }
-._icon-mark:before {
-	content: "\e906";
-}
-._icon-phone:before {
-	content: "\e907";
-}
-._icon-check:before {
-	content: "\e90d";
-}
-._icon-arrow:before {
-	content: "\e917";
-}
-._icon-down:before {
-	content: "\e90f";
+._icon-youtube:before {
+  content: "\e908";
 }
 ._icon-close:before {
-	content: "\e904";
+  content: "\e909";
+}
+._icon-vk:before {
+  content: "\e900";
+}
+._icon-phone:before {
+  content: "\e907";
+}
+._icon-tg:before {
+  content: "\e90a";
 }
