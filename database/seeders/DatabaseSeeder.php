@@ -15,12 +15,13 @@ class DatabaseSeeder extends Seeder
 	 */
 	public function run(): void
 	{
-		Work::factory(10)->create();
-
 		AdminFactory::new()->createOne([
 			'email' => 'moiseevEO@yandex.ru',
 			'password' => bcrypt('1234'),
 			'name' => 'Евгений',
 		]);
+
+		Work::factory(3)->create();
+
 	}
 }

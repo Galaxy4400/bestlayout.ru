@@ -12,7 +12,9 @@ class HomeController extends Controller
 {
 	public function homePage()
 	{
-		return view('welcome');
+		$works = Work::all();
+
+		return view('welcome', compact('works'));
 	}
 
 

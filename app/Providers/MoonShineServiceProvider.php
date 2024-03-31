@@ -27,7 +27,7 @@ class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
 	protected function menu(): array
 	{
 		return [
-			MenuItem::make('Posts', new WorkResource())
+			MenuItem::make('Мои работы', new WorkResource())
 		];
 	}
 
