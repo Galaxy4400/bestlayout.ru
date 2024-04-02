@@ -112,9 +112,9 @@
 						<div class="sticky__persone sticky-persone">
 							<div class="sticky-persone__name">Моисеев<br>Евгений,</div>
 							<div class="sticky-persone__position">WEB-разработчик с<br>10-летним стажем</div>
-							<div class="sticky-persone__photo">
-								<img src="{{ Vite::image('persone.png') }}" alt="persone.png">
-							</div>
+							<figure class="sticky-persone__photo _ibg" data-src="{{ Vite::image('photo.jpg') }}">
+								<img class="sticky-persone__image" src="{{ Vite::image('photo.jpg') }}" alt="Моисеев Евгений">
+							</figure>
 						</div>
 					</div>
 				</div>

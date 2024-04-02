@@ -525,6 +525,10 @@
 			right: rem(-180);
 		}
 	}
+	// .sticky-persone__image
+	&__image {
+		transform: scale(1.4) translate(7px, 15px);
+	}
 }
 
 //===============================================================
