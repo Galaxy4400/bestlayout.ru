@@ -5,10 +5,10 @@ new Adapt();
 const modal = new Modal({animation: 'fadeIn'});
 
 // Инициализация главного меню
-const mainMenu = new Menu('main-menu');
+// const mainMenu = new Menu('main-menu');
 
 // Инициализация меню в футере
-const footerMenu = new Spoiler('footer-menu', {mediaMax: 991});
+// const footerMenu = new Spoiler('footer-menu', {mediaMax: 991});
 
 // Инициализация спойлера
 const stickySpoiler = new Spoiler('sticky', {open: true});

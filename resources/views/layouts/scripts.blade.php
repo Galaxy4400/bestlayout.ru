@@ -1,5 +1,5 @@
 <!-- libs -->
-<script src="{{ asset('assets/js/libs/lazyload.min.js') }}"></script>
+{{-- <script src="{{ asset('assets/js/libs/lazyload.min.js') }}"></script> --}}
 <script src="{{ asset('assets/js/libs/choices.min.js') }}"></script>
 <script src="{{ asset('assets/js/libs/nouislider.min.js') }}"></script>
 <script src="{{ asset('assets/js/libs/inputmask.min.js') }}"></script>
@@ -10,11 +10,11 @@
 
 <!-- plugins -->
 <script src="{{ asset('assets/js/plugins/adapt.js') }}"></script>
-<script src="{{ asset('assets/js/plugins/menu.js') }}"></script>
+{{-- <script src="{{ asset('assets/js/plugins/menu.js') }}"></script> --}}
 <script src="{{ asset('assets/js/plugins/modal.js') }}"></script>
-<script src="{{ asset('assets/js/plugins/tabs.js') }}"></script>
+{{-- <script src="{{ asset('assets/js/plugins/tabs.js') }}"></script> --}}
 <script src="{{ asset('assets/js/plugins/spoiler.js') }}"></script>
-<script src="{{ asset('assets/js/plugins/rating.js') }}"></script>
+{{-- <script src="{{ asset('assets/js/plugins/rating.js') }}"></script> --}}
 <script src="{{ asset('assets/js/plugins/sticky.js') }}"></script>
 
 <!-- files -->
