@@ -20,7 +20,7 @@
 
 	<button class="move-up" type="button" data-move-up data-goto="wrapper" data-fix-m></button>
 
-	<div class="loader"></div>
+	{{-- <div class="loader"></div> --}}
 
 	@include('layouts.modal')
 
