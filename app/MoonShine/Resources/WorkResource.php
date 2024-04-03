@@ -37,7 +37,7 @@ class WorkResource extends ModelResource
 						Text::make('Описание', 'description'),
 						Url::make('Основная ссылка', 'link'),
 						Select::make('Тип', 'type')->options(config('works.types')),
-						Image::make('Превью', 'thumbnail')->dir('images/works'),
+						Image::make('Превью', 'thumbnail')->dir('images/works')->removable(),
 					]),
 				])->columnSpan(6),
 				Column::make([
