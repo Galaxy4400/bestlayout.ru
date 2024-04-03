@@ -1,5 +1,5 @@
 <head>
-	<title>Best Layout</title>
+	<title>Верска сайтов</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
