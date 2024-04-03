@@ -2,7 +2,7 @@
 	<div class="main__container _container">
 		<div class="main__head main-head">
 			<h1 class="main-head__title" data-aos="fade-right" data-aos-delay="800">Эксперт</h1>
-			<p class="main-head__label" data-aos="fade-up" data-aos-delay="1000">по верске сайтов<br>любой сложности</p>
+			<p class="main-head__label" data-aos="fade-up" data-aos-delay="1000">по верстке сайтов<br>любой сложности</p>
 		</div>
 		<div class="main__content main-body">
 			<h2 class="main-body__title main-body-title">
