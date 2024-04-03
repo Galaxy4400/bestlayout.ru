@@ -6,12 +6,12 @@
 		</div>
 		<div class="main__content main-body">
 			<h2 class="main-body__title main-body-title">
-				<div class="main-body-title__first">
+				<span class="main-body-title__first">
 					<span data-aos="fade-right">Идеальная</span><span data-aos="fade-right">вёрстка</span>
-				</div>
-				<div class="main-body-title__second">
+				</span>
+				<span class="main-body-title__second">
 					<span data-aos="fade-left">идеального</span><span data-aos="fade-left">сайта</span>
-				</div>
+				</span>
 			</h2>
 			<div class="main-body__content" data-aos="fade-up">
 				<div class="main-body__text">Доверьте ваш дизайн профессионалу, и даже самые смелые идеи будут воплощены в реальность</div>
