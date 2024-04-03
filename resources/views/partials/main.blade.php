@@ -21,7 +21,7 @@
 		</div>
 	</div>
 	<div class="main__bacground _ibg">
-		<video autoplay muted loop data-aos="fade">
+		<video autoplay muted loop> {{-- data-aos="fade" --}}
 			<source src="{{ Vite::video('abstract_animation.webm') }}" type="video/webm; codecs=&quot;vp9, vorbis&quot;">
 			{{-- <source src="{{ Vite::video('abstract_animation.mp4') }}" type="video/mp4"> --}}
 		</video>
