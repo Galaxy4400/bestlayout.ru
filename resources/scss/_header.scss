@@ -4,16 +4,16 @@
 	left: 0;
 	width: 100%;
 	z-index: 50;
-	background-color: transparent;
 	transition: background-color 0.3s ease 0s;
 	&._scroll {
-		background-color: rgba(0, 0, 0, 0.7);
+		
 	}
 	// .header__container
 	&__container {
 	}
 	// .header__body
 	&__body {
+		position: relative;
 		padding: rem(15) 0px;
 		display: flex;
 		justify-content: space-between;
@@ -21,12 +21,27 @@
 		gap: rem(30);
 		height: rem(112);
 		transition: all 0.3s ease 0s;
+		&::before {
+			content: '';
+			position: absolute;
+			width: rem(9999);
+			height: 100%;
+			top: 0;
+			left: 0;
+			transform: translateX(-50%);
+			background-color: transparent;
+			transition: all 0.3s ease 0s;
+			z-index: -1;
+		}
 		@media (max-width: em($md4)) {
 			gap: rem(15);
 		}
 		.header._scroll & {
 			height: rem(70);
 			padding: rem(10) 0px;
+			&::before {
+				background-color: rgba(0, 0, 0, 0.7);
+			}
 		}
 	}
 	// .header__column
