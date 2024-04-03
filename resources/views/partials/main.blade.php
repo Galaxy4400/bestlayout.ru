@@ -1,7 +1,8 @@
 <section class="page__section main">
 	<div class="main__container _container">
 		<div class="main__head main-head">
-			<h1 class="main-head__title" data-aos="fade-right" data-aos-delay="800">Эксперт</h1>
+			<h1 class="_semantic-hidden">Верска сайтов</h1>
+			<p class="main-head__title h1" data-aos="fade-right" data-aos-delay="800">Эксперт</p>
 			<p class="main-head__label" data-aos="fade-up" data-aos-delay="1000">по верстке сайтов<br>любой сложности</p>
 		</div>
 		<div class="main__content main-body">
@@ -14,7 +15,7 @@
 				</span>
 			</h2>
 			<div class="main-body__content" data-aos="fade-up">
-				<div class="main-body__text">Доверьте ваш дизайн профессионалу, и даже самые смелые идеи будут воплощены в реальность</div>
+				<p class="main-body__text">Доверьте ваш дизайн профессионалу, и даже самые смелые идеи будут воплощены в реальность</p>
 				<button class="main-body__btn btn btn_gradient" type="button" data-goto="request">Заказать верску</button>
 			</div>
 		</div>
