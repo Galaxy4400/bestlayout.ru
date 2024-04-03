@@ -681,6 +681,10 @@ function autoComplete(form) {
 	allFields.forEach(field => {
 		field.setAttribute('autocomplete', 'none');
 		field.setAttribute('readonly', 'readonly');
+
+		if (field.type == 'hidden') {
+			allFields.forEach(field => field.removeAttribute('autocomplete'));
+		}
 	});
 	
 	document.addEventListener('DOMContentLoaded', () => {
