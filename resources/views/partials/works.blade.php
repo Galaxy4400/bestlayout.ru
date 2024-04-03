@@ -8,7 +8,7 @@
 						<div class="works-slide__body">
 							<div class="works-slide__content">
 								<div class="works-slide__tag">
-									<span class="tag tag_blue">{{ config('works.types.'.$work->type) }}</span>
+									<span class="tag tag_{{ $work->type }}">{{ config('works.types.'.$work->type) }}</span>
 								</div>
 								<h4 class="works-slide__title"><a href="{{ $work->link }}" target="_blank">{{ $work->name }}</a></h4>
 								<div class="works-slide__text">{{ $work->description }}</div>
