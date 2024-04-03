@@ -43,7 +43,17 @@
 	// }
 	// .main-head__title
 	&__title {
-		margin: 0px 0px rem(20) 0px;
+		display: grid;
+		line-height: 115%;
+		margin: 0px 0px rem(15) 0px;
+		span {
+			&:nth-child(1) {
+			}
+			&:nth-child(2) {
+				padding: 0px 0px 0px 30%;
+				@include adaptiv-value(font-size, 100, 45, 1);
+			}
+		}
 	}
 	// .main-head__label
 	&__label {
@@ -53,7 +63,7 @@
 		text-transform: uppercase;
 		display: inline-flex;
 		justify-content: flex-end;
-		padding: 0px 30% 0px 0px;
+		padding: 0px 17% 0px 0px;
 		@media (max-width: em($md3)) {
 			padding: 0;
 			// br {

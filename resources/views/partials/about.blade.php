@@ -112,7 +112,7 @@
 						<div class="sticky__persone sticky-persone">
 							<div class="sticky-persone__name">Моисеев<br>Евгений,</div>
 							<div class="sticky-persone__position">WEB-разработчик с<br>10-летним стажем</div>
-							<figure class="sticky-persone__photo _ibg" data-src="{{ Vite::image('photo.webp') }}">
+							<figure class="sticky-persone__photo _ibg">
 								<img class="sticky-persone__image" src="{{ Vite::image('photo.webp') }}" alt="Моисеев Евгений">
 							</figure>
 						</div>

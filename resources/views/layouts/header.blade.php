@@ -1,4 +1,4 @@
-<header class="header" data-fix data-aos="fade-down" data-aos-delay="500">
+<header class="header" data-fix data-aos="fade-down" data-aos-delay="800">
 	<div class="header__container _container">
 		<div class="header__body">
 			<div class="header__column header__column_logo">

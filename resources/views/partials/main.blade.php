@@ -1,9 +1,12 @@
 <section class="page__section main">
 	<div class="main__container _container">
 		<div class="main__head main-head">
-			<h1 class="_semantic-hidden">Верска сайтов</h1>
-			<p class="main-head__title h1" data-aos="fade-right" data-aos-delay="800">Эксперт</p>
-			<p class="main-head__label" data-aos="fade-up" data-aos-delay="1000">по верстке сайтов<br>любой сложности</p>
+			{{-- <h1 class="_semantic-hidden">Верска сайтов</h1> --}}
+			<h1 class="main-head__title">
+				<span data-aos="fade-right" data-aos-delay="200">Верска</span> 
+				<span data-aos="fade-right" data-aos-delay="400">сайтов</span>
+			</h1>
+			<p class="main-head__label" data-aos="fade-right" data-aos-delay="600">любой сложности</p>
 		</div>
 		<div class="main__content main-body">
 			<h2 class="main-body__title main-body-title">
