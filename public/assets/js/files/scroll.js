@@ -28,7 +28,7 @@ function initAOS() {
 		duration: 1000,
 	});
 }
-// document.addEventListener('DOMContentLoaded', () => setTimeout(initAOS, 1000));
+document.addEventListener('DOMContentLoaded', () => setTimeout(initAOS, 1000));
 
 
 /**
