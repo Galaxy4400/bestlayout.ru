@@ -3,7 +3,7 @@
 		<div class="main__head main-head">
 			{{-- <h1 class="_semantic-hidden">Верска сайтов</h1> --}}
 			<h1 class="main-head__title">
-				<span data-aos="fade-right" data-aos-delay="200">Верска</span> 
+				<span data-aos="fade-right" data-aos-delay="200">Верстка</span> 
 				<span data-aos="fade-right" data-aos-delay="400">сайтов</span>
 			</h1>
 			<p class="main-head__label" data-aos="fade-right" data-aos-delay="600">любой сложности</p>
