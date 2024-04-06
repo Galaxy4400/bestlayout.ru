@@ -1,9 +1,8 @@
 <section class="page__section main">
 	<div class="main__container _container">
 		<div class="main__head main-head">
-			{{-- <h1 class="_semantic-hidden">Верска сайтов</h1> --}}
 			<h1 class="main-head__title">
-				<span data-aos="fade-right" data-aos-delay="200">Верстка</span> 
+				<span data-aos="fade-right" data-aos-delay="200">Вёрстка</span> 
 				<span data-aos="fade-right" data-aos-delay="400">сайтов</span>
 			</h1>
 			<p class="main-head__label" data-aos="fade-right" data-aos-delay="600">любой сложности</p>
@@ -26,7 +25,6 @@
 	<div class="main__bacground _ibg">
 		<video autoplay muted loop data-aos="fade">
 			<source src="{{ Vite::video('abstract_animation.webm') }}" type="video/webm; codecs=&quot;vp9, vorbis&quot;">
-			{{-- <source src="{{ Vite::video('abstract_animation.mp4') }}" type="video/mp4"> --}}
 		</video>
 	</div>
 </section>
